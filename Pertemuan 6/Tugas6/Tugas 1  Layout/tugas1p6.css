@@ -1,0 +1,23 @@
+body {
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+
+.header {
+    width: 500px;
+    height: 70px;
+    background: #2f58ca;
+}
+
+.content {
+    width: 500px;
+    height: 400px;
+    background: #64b1dd;
+}
+
+.footer {
+    width: 500px;
+    height: 70px;
+    background: #ece13d;
+}

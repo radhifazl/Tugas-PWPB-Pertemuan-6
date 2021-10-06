@@ -1,0 +1,98 @@
+/* === Menggunakan display:grid dan place-items:center agar content ketengah === */
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+    width: 480px;
+    height: 400px;
+    background: #ffffff;
+    border: 3px solid #02b3e9;
+    border-top: 1px solid #02b3e9;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+/* === Memberi form width 100% agar bisa mengubah width input menggunakan % === */
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+/* === Disini saya menggunakan h2, ntah kenapa menggunakan label tidak bisa mengubah align ke tengah, 
+        baik menggunakan margin ataupun text-align tidak bisa === */
+#form-label { 
+    color: #186edf;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 4px solid #186edf;
+    padding-bottom: 1rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+/* === Mentarget langsung kedua input secara bersamaan agar tidak mengulangi kode === */
+input { 
+    padding: 1rem;
+    width: 92.5%;
+    border: none;
+    border-bottom: 2px solid #9ec2ee;
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: #acacac;
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: #186edf;
+}
+
+/* === Mentarget input username agar memberi jarak kebawah === */
+#username { 
+    margin-bottom: 1rem;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    background: #186edf;
+    color: #dadada;
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    width: 12rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.btn:hover {
+    background: #2983f0;
+}
+
+.submit-btn {
+    margin-right: .5rem;
+}
+
+.reset-btn {
+    margin-left: .5rem;
+}
